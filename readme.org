@@ -1,0 +1,6 @@
+* Shadowsocks 源码阅读
+
+** Resources
+    - http://huiliu.github.io/2016/03/19/shadowsocks.html
+    - http://blog.marchtea.com/archives/77
+    - http://vc2tea.com/whats-shadowsocks/
