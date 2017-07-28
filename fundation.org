@@ -6,12 +6,19 @@
 *** ipaddress
 *** signal
 *** socket
-*** hashlib
 *** collections
 *** struct
 *** ctypes
 *** getopt
-*** hmac
+*** hashlib & hmac
+    例如 JWT 中应用
+
+    #+BEGIN_SRC python
+    import hmac, hashlib
+    secret_key = 'key'
+    message = 'hh'
+    hmac.new(secret_key, message, hashlib.sha1).hexdigest()
+    #+END_SRC
 
 ** 整个系统的架构和原理
     #+ATTR_HTML: :width 80%
@@ -23,3 +30,4 @@
 
 ** 协议
     - sock5
+    - [[https://tools.ietf.org/html/rfc2104.html][HMAC: Keyed-Hashing for Message Authentication]]
