@@ -1,0 +1,25 @@
+* 开始前的工作
+
+** 常用的库
+*** Crypto
+*** curio
+*** ipaddress
+*** signal
+*** socket
+*** hashlib
+*** collections
+*** struct
+*** ctypes
+*** getopt
+*** hmac
+
+** ** 整个系统的架构和原理
+    #+ATTR_HTML: :width 80%
+    [[file:./imgs/20170728_215700_64723_R.png]]
+
+    - PC 是需要利用 shadowsocks 代理的应用；
+    - SS Local 为 shadowsocks 客户端，通常运行在 PC/手机上（也可以运行在任务 PC 可 以到达的位置），用于与 shadowsocks 服务端建立连接。
+    - ss server shadowsocks 服务端，与 ss local 通讯，完成 ss local 请 求的访问，并将返回数据加密返回给 ss local。
+
+** 协议
+    - sock5
