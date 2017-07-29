@@ -19,7 +19,7 @@
     message = 'hh'
     hmac.new(secret_key, message, hashlib.sha1).hexdigest()
     #+END_SRC
-
+*** IO 复用 epoll kqueue select
 ** 整个系统的架构和原理
     #+ATTR_HTML: :width 80%
     [[file:./imgs/20170728_215700_64723_R.png]]
@@ -31,3 +31,7 @@
 ** 协议
     - sock5
     - [[https://tools.ietf.org/html/rfc2104.html][HMAC: Keyed-Hashing for Message Authentication]]
+
+
+* 剖析
+server.py 和 local.py 是项目的入口
